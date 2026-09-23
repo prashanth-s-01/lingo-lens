@@ -163,23 +163,3 @@ cmake -B build -S .
 # Build
 cmake --build build
 ```
-
----
-
-## Current Status
-
-The project is under active development. Here's the current progress:
-
-| Phase | Description | Status |
-|-------|------------|--------|
-| **Phase 1** | Core types, backend interfaces, router | ✅ Complete |
-| **Phase 2** | Style extraction & inpainting engine | ✅ Complete |
-| **Phase 3** | Text fitting & perspective overlay | 🔲 Planned |
-| **Phase 4** | Backend implementations (Apple, MLKit, ONNX) | 🔲 Planned |
-| **Phase 5** | Test harness & verification suite | 🔲 Planned |
-
----
-
-## License
-
-TBD
