@@ -134,16 +134,16 @@ lingo-lens/
 │       ├── router.cpp              # Compile-time platform detection + factory stubs
 │       ├── style_analyzer.cpp      # K-means clustering, bounding box pixel scanning
 │       └── inpainter.cpp           # Text pixel replacement with background color
-├── backends/                       # (Planned) Platform-specific backend implementations
+├── backends/                       #Platform-specific backend implementations
 │   ├── apple/                      #   Apple Vision + TranslationSession + Metal
 │   ├── mlkit/                      #   Android Google ML Kit
 │   └── onnx/                       #   ONNX Runtime vendor-agnostic backend
-├── harness/                        # (Planned) Desktop CLI test harness
-├── platform/                       # (Planned) App shells
+├── harness/                        # Desktop CLI test harness
+├── platform/                       # App shells
 │   ├── ios/                        #   iOS SwiftUI
 │   └── android/                    #   Android Jetpack Compose
 └── models/
-    └── manifest.json               # (Planned) On-demand language pack registry
+    └── manifest.json               # On-demand language pack registry
 ```
 
 ---
