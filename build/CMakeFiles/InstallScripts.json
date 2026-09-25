@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/cmake_install.cmake",
+		"/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/core/cmake_install.cmake",
+		"/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/backends/cmake_install.cmake",
+		"/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/harness/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

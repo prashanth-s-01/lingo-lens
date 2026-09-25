@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblingolens_core.a CMakeFiles/lingolens_core.dir/src/router.cpp.o CMakeFiles/lingolens_core.dir/src/style_analyzer.cpp.o CMakeFiles/lingolens_core.dir/src/inpainter.cpp.o CMakeFiles/lingolens_core.dir/src/homography.cpp.o CMakeFiles/lingolens_core.dir/src/tracker.cpp.o CMakeFiles/lingolens_core.dir/src/text_renderer.cpp.o CMakeFiles/lingolens_core.dir/src/mock_backends.cpp.o CMakeFiles/lingolens_core.dir/src/pipeline.cpp.o
+/usr/bin/ranlib liblingolens_core.a

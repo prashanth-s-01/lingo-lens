@@ -1,4 +1,5 @@
 #include "../include/lingolens/router.h"
+#include "../include/lingolens/mock_backends.h"
 #include <stdexcept>
 
 namespace lingolens {
@@ -42,23 +43,20 @@ Router::Router(BackendType preferred)
 BackendType Router::resolvedBackend() const { return m_resolved; }
 
 // --- Factory Methods ---
-// For now, these throw "not implemented" because we haven't built
-// any concrete backends yet. In Phase 4, each case will construct
-// the appropriate platform-specific implementation.
 
 std::unique_ptr<ITextDetector> Router::createDetector() const {
   switch (m_resolved) {
   case BackendType::Apple:
     // TODO Phase 4: return std::make_unique<AppleTextDetector>();
-    throw std::runtime_error("Apple backend not yet implemented");
-
+    // Fall through to Mock for now
   case BackendType::MLKit:
     // TODO Phase 4: return std::make_unique<MLKitTextDetector>();
-    throw std::runtime_error("MLKit backend not yet implemented");
-
+    // Fall through to Mock for now
   case BackendType::ONNX:
     // TODO Phase 4: return std::make_unique<OnnxTextDetector>();
-    throw std::runtime_error("ONNX backend not yet implemented");
+    // Fall through to Mock for now
+  case BackendType::Mock:
+    return std::make_unique<MockTextDetector>();
 
   default:
     throw std::runtime_error("Unknown backend type");
@@ -68,11 +66,11 @@ std::unique_ptr<ITextDetector> Router::createDetector() const {
 std::unique_ptr<ITextRecognizer> Router::createRecognizer() const {
   switch (m_resolved) {
   case BackendType::Apple:
-    throw std::runtime_error("Apple backend not yet implemented");
   case BackendType::MLKit:
-    throw std::runtime_error("MLKit backend not yet implemented");
   case BackendType::ONNX:
-    throw std::runtime_error("ONNX backend not yet implemented");
+  case BackendType::Mock:
+    return std::make_unique<MockTextRecognizer>();
+
   default:
     throw std::runtime_error("Unknown backend type");
   }
@@ -81,11 +79,11 @@ std::unique_ptr<ITextRecognizer> Router::createRecognizer() const {
 std::unique_ptr<ITranslator> Router::createTranslator() const {
   switch (m_resolved) {
   case BackendType::Apple:
-    throw std::runtime_error("Apple backend not yet implemented");
   case BackendType::MLKit:
-    throw std::runtime_error("MLKit backend not yet implemented");
   case BackendType::ONNX:
-    throw std::runtime_error("ONNX backend not yet implemented");
+  case BackendType::Mock:
+    return std::make_unique<MockTranslator>();
+
   default:
     throw std::runtime_error("Unknown backend type");
   }
@@ -94,11 +92,11 @@ std::unique_ptr<ITranslator> Router::createTranslator() const {
 std::unique_ptr<IInpainter> Router::createInpainter() const {
   switch (m_resolved) {
   case BackendType::Apple:
-    throw std::runtime_error("Apple backend not yet implemented");
   case BackendType::MLKit:
-    throw std::runtime_error("MLKit backend not yet implemented");
   case BackendType::ONNX:
-    throw std::runtime_error("ONNX backend not yet implemented");
+  case BackendType::Mock:
+    return std::make_unique<MockInpainter>();
+
   default:
     throw std::runtime_error("Unknown backend type");
   }
