@@ -9,7 +9,8 @@ enum class BackendType {
     Auto,      // Probe device and choose best automatically
     Apple,     // Vision / CoreML / Metal (iOS/macOS)
     MLKit,     // Google ML Kit (Android)
-    ONNX       // Cross-platform ONNX Runtime (also the fallback)
+    ONNX,      // Cross-platform ONNX Runtime (also the fallback)
+    Mock       // Built-in mock backends for testing / development
 };
 
 class Router {

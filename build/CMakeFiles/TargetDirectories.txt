@@ -1,0 +1,10 @@
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/CMakeFiles/edit_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/CMakeFiles/rebuild_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/core/CMakeFiles/lingolens_core.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/core/CMakeFiles/edit_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/core/CMakeFiles/rebuild_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/backends/CMakeFiles/edit_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/backends/CMakeFiles/rebuild_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/harness/CMakeFiles/lingolens_harness.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/harness/CMakeFiles/edit_cache.dir
+/Users/Shared/Files From d.localized/PRASHANTH/Projects/lingo-lens/build/harness/CMakeFiles/rebuild_cache.dir
